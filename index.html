@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Forever Love 💌</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            font-family: 'Open Sans', sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .gradient-background {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96f2d7);
+            opacity: 0.1;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .love-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .love-letter {
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .letter-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff7eb9;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .photo {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            opacity: 0.9;
+        }
+
+        .photo:hover {
+            transform: scale(1.03);
+            opacity: 1;
+        }
+
+        .heart {
+            color: #ff7eb9;
+            font-size: 1.2em;
+            margin: 0 3px;
+        }
+
+        @media (max-width: 480px) {
+            .letter-title {
+                font-size: 2em;
+            }
+            
+            .love-letter {
+                font-size: 0.9em;
+            }
+            
+            .photo {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-background"></div>
+    
+    <div class="container">
+        <div class="love-card">
+            <h1 class="letter-title">To My Sunshine 🌸</h1>
+            
+            <div class="love-letter">
+                <p>My Dearest [Her Name],</p>
+                
+                <p>There are a million reasons why I love you, but tonight I just want you to remember these three:</p>
+                
+                <p>1. Your laughter is my favorite sound <span class="heart">💖</span><br>
+                2. The way you see beauty in small things<br>
+                3. How you make me want to be better every day</p>
+                
+                <p>I know we've hit some rough waves recently, but I want you to know I'm still here. Still choosing us. Still believing in what we have. Our late-night talks, the quiet moments, even our silly arguments - they all matter to me.</p>
+                
+                <p>I'm not perfect, but I promise to keep trying. For us. For our future. Because a world without you beside me is a world without color.</p>
+                
+                <p>Forever Yours,<br>
+                [Your Name]</p>
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <img src="https://www.w3schools.com/w3images/avatar2.png" class="photo" alt="Memory 1">
+            <img src="https://www.w3schools.com/w3images/fjords.jpg" class="photo" alt="Memory 2">
+            <img src="https://www.w3schools.com/w3images/lights.jpg" class="photo" alt="Memory 3">
+            <img src="https://www.w3schools.com/w3images/nature.jpg" class="photo" alt="Memory 4">
+            <img src="https://www.w3schools.com/w3images/snow.jpg" class="photo" alt="Memory 5" style="grid-column: span 2;">
+        </div>
+    </div>
+
+    <script>
+        // Add subtle floating animation to background
+        document.querySelector('.gradient-background').animate([
+            { transform: 'scale(1) rotate(0deg)' },
+            { transform: 'scale(1.2) rotate(360deg)' }
+        ], {
+            duration: 30000,
+            iterations: Infinity
+        });
+    </script>
+</body>
+</html>
